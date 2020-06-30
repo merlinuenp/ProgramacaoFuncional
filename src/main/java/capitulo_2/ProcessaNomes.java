@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 public class ProcessaNomes {
 
     // Versão imperativa. 
-    public String limparNomes(List<String> listaDeNomes) {
+    public String processarNomes(List<String> listaDeNomes) {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < listaDeNomes.size(); i++) {
             if (listaDeNomes.get(i).length() > 1) {
@@ -27,7 +27,7 @@ public class ProcessaNomes {
     
     
     // Versão funcional 
-    public String limparNomesFuncional(List<String> listaDeNomes){
+    public String processarNomesFuncional(List<String> listaDeNomes){
         if (listaDeNomes == null) return "";
         return listaDeNomes
                 .stream()
